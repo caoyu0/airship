@@ -1,7 +1,7 @@
 {
   "name": "paragonie/airship",
   "description": "PHP7 Content Management Platform - 'The sky is only the beginning'",
-  "license": "MIT",
+  "license": "GPL3",
   "keywords": [
     "Airship",
     "blog",
