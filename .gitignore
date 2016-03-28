@@ -1,3 +1,5 @@
+/.idea/
+/nbproject/
 /files/*
 /src/public/launch.php
 /src/config/cabins.json
