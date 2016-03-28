@@ -1,0 +1,9 @@
+{% extends base_template() %}
+
+{% block main %}
+    {% include cargo("bridge_blog_comments_view") ignore missing %}
+{% endblock %}
+
+{% block page_js %}
+    <script src="{{ "/static/Bridge/editor.js"|cachebust }}"></script>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends base_template() %}
+{% set title = __("New Blog Category") %}
+{% import "macros/blog_categories.twig" as bcatmac %}
+
+{% block main %}
+    {% include cargo("bridge_blog_categories_new") ignore missing %}
+{% endblock %}
+
+{% block page_js %}
+    <script src="{{ "/static/Bridge/blog_categories.js"|cachebust }}"></script>
+    <script src="{{ "/static/Bridge/editor.js"|cachebust }}"></script>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends base_template() %}
+
+{% block main %}
+    {% include cargo("bridge_blog_series_new") ignore missing %}
+{% endblock %}
+
+{% block page_js %}
+    <script src="{{ "/static/Bridge/editor.js"|cachebust }}"></script>
+    <script src="{{ "/static/Bridge/blog_series.js"|cachebust }}"></script>
+{% endblock %}

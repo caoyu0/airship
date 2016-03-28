@@ -1,0 +1,12 @@
+{% extends base_template() %}
+{% set title = __("New Author") %}
+
+{% block main %}
+    {% include cargo("bridge_authors_explain") %}
+    {% include cargo("bridge_authors_new") ignore missing %}
+{% endblock %}
+
+{% block page_js %}
+    <script src="{{ "/static/Bridge/editor.js"|cachebust }}"></script>
+    <script src="{{ "/static/Bridge/author_new.js"|cachebust }}"></script>
+{% endblock %}

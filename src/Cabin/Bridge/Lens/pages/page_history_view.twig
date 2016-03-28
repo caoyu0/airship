@@ -1,0 +1,10 @@
+{% extends base_template() %}
+
+{% block main %}
+    {% include cargo("bridge_pages_page_history_view") ignore missing %}
+{% endblock %}
+
+{% block page_js %}
+    <script src="{{ "/static/Bridge/editor.js"|cachebust }}"></script>
+    <script src="{{ "/static/Bridge/pages_edit.js"|cachebust }}"></script>
+{% endblock %}
